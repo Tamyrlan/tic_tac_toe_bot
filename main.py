@@ -9,17 +9,11 @@ from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageH
 import strings as st
 
 def get_token():
-    my_bot=Updater('ТОКЕН',use_context=True)
-# def getToken():
-#     token = ''
-#     if os.path.isfile(st.BOT_TOKEN_FILENAME):
-#         f = open(st.BOT_TOKEN_FILENAME, "r")
-#         token = f.read()
-#         f.close()
-#     else:
-#         print("Пожалуйста, создайте в папке проекта файл 'token.txt' и поместите туда токен для работы телеграм бота  и запустите скрипт заново")
-#         sys.exit()
-#     return token
+    token = ''
+    os.path.isfile(st.BOT_TOKEN_FILENAME)
+    with open(st.BOT_TOKEN_FILENAME, "r") as f:
+        token = f.read()
+    return token
 
 
 def isWin(arr, who):
