@@ -1,8 +1,8 @@
 BOT_TOKEN_FILENAME = 'token.txt'
 
 SYMBOL_X = '❌'
-SYMBOL_O = '⭕'
-SYMBOL_UNDEF = '◻'
+SYMBOL_O = '🔴'
+SYMBOL_UNDEF = '🎯'
 
 ANSW_YOUR_TURN = 'Ваш ход'
 ANSW_YOU_WIN = 'Вы победили'
